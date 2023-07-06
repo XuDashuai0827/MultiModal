@@ -1,0 +1,27 @@
+## 数据处理、模型架构、测试函数代码
+from data.dataSet import MultiModalDataSet
+from model.MultiModal import MultiModalClassify
+from predict import predict_func
+
+## 调用库
+import pandas as pd
+import os
+from bs4 import UnicodeDammit
+from sklearn.model_selection import train_test_split
+
+import torch
+import torchvision
+import transformers
+from PIL import Image
+from torch.utils.data import Dataset
+
+from torch import nn
+import torch.nn.functional as F
+
+from tqdm import tqdm
+import torch.optim as optim
+from torch.utils.data import DataLoader
+import sklearn.metrics
+import matplotlib.pyplot as plt
+
+import numpy as np
